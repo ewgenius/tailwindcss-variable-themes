@@ -14,11 +14,9 @@
     "allowJs": true
   },
   "include": [
-    "./src/index.ts",
-    "./tests/index.ts"
+    "./src/index.ts"
   ],
   "exclude": [
     "./tests/index.test.ts",
-    "./examples"
   ]
 }
