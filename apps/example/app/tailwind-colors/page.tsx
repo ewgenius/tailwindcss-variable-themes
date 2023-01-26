@@ -35,7 +35,7 @@ export default async function CustomExample() {
         />
       </div>
 
-      <div className="font-mono text-xs grid grid-cols-2 gap-2">
+      <div className="font-mono text-xs grid grid-cols-2 gap-2 mb-12">
         <ColorCard className="bg-primary-100" />
         <ColorCard className="bg-primary-200" />
         <ColorCard className="bg-primary-300" />
