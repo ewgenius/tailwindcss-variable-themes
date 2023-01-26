@@ -8,7 +8,8 @@
     "access": "public"
   },
   "files": [
-    "./dist/*"
+    "./dist/*",
+    "./README.md"
   ],
   "scripts": {
     "swcify": "swc ./src --out-dir ./dist",
@@ -16,7 +17,8 @@
     "dev": "pnpm swcify -- --watch",
     "test": "jest",
     "postbuild": "tsc --emitDeclarationOnly",
-    "prepublishOnly": "pnpm build"
+    "readme": "cp ../../README.md ./",
+    "prepublishOnly": "pnpm build && pnpm readme"
   },
   "keywords": [],
   "author": "Evgenii Khramkov <hey@ewgenius.me>",
