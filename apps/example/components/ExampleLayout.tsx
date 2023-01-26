@@ -27,6 +27,12 @@ export const ExampleLayout: FC<
             radix colors
           </Link>
           <Link
+            href="/radix-semantic"
+            className="underline opacity-50 hover:no-underline hover:opacity-100 transition-opacity underline-offset-2 duration-300"
+          >
+            radix semantic colors
+          </Link>
+          <Link
             href="/tailwind-colors"
             className="underline opacity-50 hover:no-underline hover:opacity-100 transition-opacity underline-offset-2 duration-300"
           >

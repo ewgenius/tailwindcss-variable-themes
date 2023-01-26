@@ -8,6 +8,8 @@ https://tailwindcss-variable-themes.ewgenius.me/custom ([code](apps/example/tail
 
 https://tailwindcss-variable-themes.ewgenius.me/radix-colors ([code](apps/example/tailwind-radix.config.js))
 
+https://tailwindcss-variable-themes.ewgenius.me/radix-semantic ([code](apps/example/tailwind-radix-semantic.config.js))
+
 https://tailwindcss-variable-themes.ewgenius.me/tailwind-colors ([code](apps/example/tailwind-tailwind.config.js))
 
 ## Installation
