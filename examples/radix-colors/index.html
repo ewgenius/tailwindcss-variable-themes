@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html class="theme-gray-light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./styles.css" rel="stylesheet" />
+  </head>
+  <body class="bg-primary-1 text-primary-12">
+    <main class="container mx-auto p-4 max-w-3xl flex flex-col gap-2">
+      <h1 class="text-3xl font-bold">tailwindcss-variable-theme plugin</h1>
+      <p class="text-lg pb-4 text-primary-11">radix-ui/colors example</p>
+
+      <div class="flex flex-wrap gap-1 pb-2">
+        <button onclick="switchTheme('gray-light')" class="text-sm px-2 py-1.5 border border-primary-7 hover:border-primary-8 bg-primary-3 hover:bg-primary-4 active:bg-primary-5 rounded">Gray Light</button>
+        <button onclick="switchTheme('gray-dark')" class="text-sm px-2 py-1.5 border border-primary-7 hover:border-primary-8 bg-primary-3 hover:bg-primary-4 active:bg-primary-5 rounded">Gray Dark</button>
+        <button onclick="switchTheme('amber-light')" class="text-sm px-2 py-1.5 border border-primary-7 hover:border-primary-8 bg-primary-3 hover:bg-primary-4 active:bg-primary-5 rounded">Amber</button>
+        <button onclick="switchTheme('amber-dark')" class="text-sm px-2 py-1.5 border border-primary-7 hover:border-primary-8 bg-primary-3 hover:bg-primary-4 active:bg-primary-5 rounded">Amber Dark</button>
+      </div>
+  
+      <div class="font-mono flex flex-row gap-1 text-xs">
+        <div class="flex flex-col gap-1 flex-1">
+          <div class="bg-primary-1 text-primary-12 p-2 rounded-sm text-center">bg-primary-1</div>
+          <div class="bg-primary-2 text-primary-12 p-2 rounded-sm text-center">bg-primary-2</div>
+          <div class="bg-primary-3 text-primary-12 p-2 rounded-sm text-center">bg-primary-3</div>
+          <div class="bg-primary-4 text-primary-12 p-2 rounded-sm text-center">bg-primary-4</div>
+          <div class="bg-primary-5 text-primary-12 p-2 rounded-sm text-center">bg-primary-5</div>
+          <div class="bg-primary-6 text-primary-12 p-2 rounded-sm text-center">bg-primary-6</div>
+          <div class="bg-primary-7 text-primary-12 p-2 rounded-sm text-center">bg-primary-7</div>
+          <div class="bg-primary-8 text-primary-12 p-2 rounded-sm text-center">bg-primary-8</div>
+          <div class="bg-primary-9 text-primary-1 p-2 rounded-sm text-center">bg-primary-9</div>
+          <div class="bg-primary-10 text-primary-1 p-2 rounded-sm text-center">bg-primary-10</div>
+          <div class="bg-primary-11 text-primary-1 p-2 rounded-sm text-center">bg-primary-11</div>
+          <div class="bg-primary-12 text-primary-1 p-2 rounded-sm text-center">bg-primary-12</div>
+        </div>
+        <div class="flex flex-col gap-1 flex-1">
+          <div class="bg-accent-1 text-accent-12 p-2 rounded-sm text-center">bg-accent-1</div>
+          <div class="bg-accent-2 text-accent-12 p-2 rounded-sm text-center">bg-accent-2</div>
+          <div class="bg-accent-3 text-accent-12 p-2 rounded-sm text-center">bg-accent-3</div>
+          <div class="bg-accent-4 text-accent-12 p-2 rounded-sm text-center">bg-accent-4</div>
+          <div class="bg-accent-5 text-accent-12 p-2 rounded-sm text-center">bg-accent-5</div>
+          <div class="bg-accent-6 text-accent-12 p-2 rounded-sm text-center">bg-accent-6</div>
+          <div class="bg-accent-7 text-accent-12 p-2 rounded-sm text-center">bg-accent-7</div>
+          <div class="bg-accent-8 text-accent-12 p-2 rounded-sm text-center">bg-accent-8</div>
+          <div class="bg-accent-9 text-accent-1 p-2 rounded-sm text-center">bg-accent-9</div>
+          <div class="bg-accent-10 text-accent-1 p-2 rounded-sm text-center">bg-accent-10</div>
+          <div class="bg-accent-11 text-accent-1 p-2 rounded-sm text-center">bg-accent-11</div>
+          <div class="bg-accent-12 text-accent-1 p-2 rounded-sm text-center">bg-accent-12</div>
+        </div>
+      </div>
+
+    </main>
+    <script>
+      function switchTheme(theme) {
+        if (!theme) {
+          document.documentElement.className = ""
+        } else {
+          document.documentElement.className = `theme-${theme}`
+        }
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,36 @@
+{
+  "name": "tailwindcss-variable-themes",
+  "version": "0.0.1",
+  "description": "",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "swcify": "swc ./src/index.ts --out-dir ./dist",
+    "build": "npm run swcify",
+    "dev": "npm run swcify -- --watch",
+    "postbuild": "tsc --emitDeclarationOnly",
+    "prepublishOnly": "npm run build",
+    "example:custom": "parcel examples/custom/index.html --dist-dir examples/custom/dist",
+    "example:radix": "parcel examples/radix-colors/index.html --dist-dir examples/radix-colors/dist",
+    "example:tailwind": "parcel examples/tailwind-colors/index.html --dist-dir examples/tailwind-colors/dist",
+    "example:tailwind:build": "parcel build --config ./examples/tailwind-colors/.parcelrc examples/tailwind-colors/index.html --dist-dir examples/tailwind-colors/dist"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "peerDependencies": {
+    "tailwindcss": ">3"
+  },
+  "devDependencies": {
+    "@radix-ui/colors": "^0.1.8",
+    "@swc/cli": "^0.1.59",
+    "@swc/core": "^1.3.28",
+    "parcel": "^2.8.3",
+    "postcss": "^8.4.21",
+    "tailwindcss": "^3.2.4",
+    "typescript": "^4.9.4"
+  }
+}
