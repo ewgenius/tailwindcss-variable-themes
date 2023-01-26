@@ -6,6 +6,8 @@ import { ColorCard } from "@/components/ColorCard";
 import { ExampleLayout } from "@/components/ExampleLayout";
 import { ConfigPreview } from "@/components/ConfigPreview";
 
+export const revalidate = 60 * 60 * 24;
+
 export default async function CustomExample() {
   const config = await getTailwindConfig(
     "../../apps/example/tailwind-radix.config.js"
