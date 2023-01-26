@@ -1,9 +1,8 @@
-import { JetBrains_Mono } from "@next/font/google";
+import { Inter } from "@next/font/google";
 
-const mono = JetBrains_Mono({
+const font = Inter({
   subsets: ["latin"],
-  variable: "--font-mono",
-  weight: ["400"],
+  variable: "--font-sans",
 });
 
 export default function RootLayout({
@@ -14,7 +13,7 @@ export default function RootLayout({
   return (
     <html lang="en" className="theme-gray-light">
       <head />
-      <body className={`${mono.variable} font-mono`}>{children}</body>
+      <body className={`${font.variable} font-sans`}>{children}</body>
     </html>
   );
 }
