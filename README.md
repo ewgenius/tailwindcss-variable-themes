@@ -2,6 +2,8 @@
 
 TailwindCSS plugin for setting up multiple themes based on css variables
 
+<img width="1582" alt="CleanShot 2023-01-27 at 00 09 22@2x" src="https://user-images.githubusercontent.com/827338/214940044-6b32f395-9f46-4ae5-b49c-cbc5f2cd190d.png">
+
 ## Examples
 
 https://tailwindcss-variable-themes.ewgenius.me/custom ([code](apps/example/tailwind-custom.config.js))
