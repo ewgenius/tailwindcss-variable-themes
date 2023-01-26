@@ -1,5 +1,5 @@
 const { fontFamily } = require("tailwindcss/defaultTheme");
-const tailwindThemePlugin = require("../dist");
+const tailwindThemePlugin = require("tailwindcss-variable-themes");
 
 /**
  * colors partially picked from https://vercel.com/design/color

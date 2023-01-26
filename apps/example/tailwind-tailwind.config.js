@@ -1,6 +1,6 @@
 const tailwindColors = require("tailwindcss/colors");
 const { fontFamily } = require("tailwindcss/defaultTheme");
-const tailwindThemePlugin = require("../dist");
+const tailwindThemePlugin = require("tailwindcss-variable-themes");
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {
