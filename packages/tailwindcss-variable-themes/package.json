@@ -1,15 +1,27 @@
 {
   "name": "tailwindcss-variable-themes",
   "version": "0.0.1",
-  "description": "",
-  "main": "dist/index.js",
-  "types": "dist/index.d.ts",
+  "description": "TailwindCSS plugin for setting up multiple themes based on css variables",
+  "keywords": [
+    "tailwind",
+    "tailwindcss",
+    "plugin",
+    "theme",
+    "css",
+    "variables"
+  ],
+  "author": "Evgenii Khramkov <hey@ewgenius.me> (https://ewgenius.me)",
+  "license": "MIT",
+  "repository": "https://github.com/ewgenius/tailwindcss-variable-themes",
   "publishConfig": {
     "access": "public"
   },
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "files": [
     "./dist/*",
-    "./README.md"
+    "./README.md",
+    "./LICENSE.md"
   ],
   "scripts": {
     "swcify": "swc ./src --out-dir ./dist",
@@ -18,12 +30,9 @@
     "test": "jest",
     "postbuild": "tsc --emitDeclarationOnly",
     "readme": "cp ../../README.md ./",
+    "license": "cp ../../LICENSE.md ./",
     "prepublishOnly": "pnpm build && pnpm readme"
   },
-  "keywords": [],
-  "author": "Evgenii Khramkov <hey@ewgenius.me>",
-  "license": "MIT",
-  "repository": "https://github.com/ewgenius/tailwindcss-variable-themes",
   "jest": {
     "transform": {
       "^.+\\.(t|j)sx?$": "@swc/jest"
