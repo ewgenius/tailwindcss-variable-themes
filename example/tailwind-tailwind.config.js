@@ -1,12 +1,20 @@
 const tailwindColors = require("tailwindcss/colors");
-const tailwindThemePlugin = require("../../dist");
+const { fontFamily } = require("tailwindcss/defaultTheme");
+const tailwindThemePlugin = require("../dist");
+
+/**
+ * colors partially picked from https://vercel.com/design/color
+ */
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./examples/tailwind-colors/index.html"],
-  darkMode: "class",
+  content: ["./app/**/*.tsx", "./components/**/*.tsx"],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        sans: ["var(--font-inter)", ...fontFamily.sans],
+      },
+    },
   },
 
   plugins: [
