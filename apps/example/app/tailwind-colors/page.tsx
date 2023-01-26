@@ -1,10 +1,16 @@
 import "./globals.css";
 
+import { getTailwindConfig } from "@/lib/getTailwindConfig";
 import { ThemeButton } from "@/components/ThemeButton";
 import { ColorCard } from "@/components/ColorCard";
 import { ExampleLayout } from "@/components/ExampleLayout";
+import { ConfigPreview } from "@/components/ConfigPreview";
 
-export default function CustomExample() {
+export default async function CustomExample() {
+  const config = await getTailwindConfig(
+    "../../apps/example/tailwind-tailwind.config.js"
+  );
+
   return (
     <ExampleLayout
       className="bg-primary-100 text-primary-900"
@@ -40,6 +46,8 @@ export default function CustomExample() {
         <ColorCard className="bg-primary-800" />
         <ColorCard className="bg-primary-900" />
       </div>
+
+      <ConfigPreview config={config} />
     </ExampleLayout>
   );
 }

@@ -1,10 +1,16 @@
 import "./globals.css";
 
+import { getTailwindConfig } from "@/lib/getTailwindConfig";
 import { ThemeButton } from "@/components/ThemeButton";
 import { ColorCard } from "@/components/ColorCard";
 import { ExampleLayout } from "@/components/ExampleLayout";
+import { ConfigPreview } from "@/components/ConfigPreview";
 
-export default function CustomExample() {
+export default async function CustomExample() {
+  const config = await getTailwindConfig(
+    "../../apps/example/tailwind-radix.config.js"
+  );
+
   return (
     <ExampleLayout
       className="bg-primary-1 text-primary-12"
@@ -29,7 +35,7 @@ export default function CustomExample() {
         />
       </div>
 
-      <div className="font-mono text-xs grid grid-cols-2 gap-2">
+      <div className="font-mono text-xs grid grid-cols-2 gap-2 mb-12">
         <ColorCard className="bg-primary-1" />
         <ColorCard className="bg-primary-2" />
         <ColorCard className="bg-primary-3" />
@@ -55,6 +61,8 @@ export default function CustomExample() {
         <ColorCard className="bg-accent-11" />
         <ColorCard className="bg-accent-12" />
       </div>
+
+      <ConfigPreview config={config} />
     </ExampleLayout>
   );
 }
