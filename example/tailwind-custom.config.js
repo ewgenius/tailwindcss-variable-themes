@@ -7,7 +7,7 @@ const tailwindThemePlugin = require("../dist");
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./app/**/*.tsx", "./components/**/*.tsx"],
+  content: ["./app/custom/*.tsx", "./components/**/*.tsx"],
   theme: {
     extend: {
       fontFamily: {

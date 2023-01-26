@@ -2,13 +2,9 @@ const radixColors = require("@radix-ui/colors");
 const { fontFamily } = require("tailwindcss/defaultTheme");
 const tailwindThemePlugin = require("../dist");
 
-/**
- * colors partially picked from https://vercel.com/design/color
- */
-
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./app/**/*.tsx", "./components/**/*.tsx"],
+  content: ["./app/radix-colors/*.tsx", "./components/**/*.tsx"],
   theme: {
     extend: {
       fontFamily: {

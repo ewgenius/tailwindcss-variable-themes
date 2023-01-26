@@ -2,13 +2,9 @@ const tailwindColors = require("tailwindcss/colors");
 const { fontFamily } = require("tailwindcss/defaultTheme");
 const tailwindThemePlugin = require("../dist");
 
-/**
- * colors partially picked from https://vercel.com/design/color
- */
-
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./app/**/*.tsx", "./components/**/*.tsx"],
+  content: ["./app/tailwind-colors/*.tsx", "./components/**/*.tsx"],
   theme: {
     extend: {
       fontFamily: {
