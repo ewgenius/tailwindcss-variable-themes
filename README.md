@@ -2,6 +2,12 @@
 
 TailwindCSS plugin for setting up multiple themes based on css variables
 
+## Examples
+
+https://tailwindcss-variable-themes.ewgenius.me/custom ([code](apps/example/tailwind-custom.config.js))
+https://tailwindcss-variable-themes.ewgenius.me/radix-colors ([code](apps/example/tailwind-radix.config.js))
+https://tailwindcss-variable-themes.ewgenius.me/tailwind-colors ([code](apps/example/tailwind-tailwind.config.js))
+
 ## Installation
 
 Install the plugin from npm:
