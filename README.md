@@ -1,6 +1,6 @@
 # tailwindcss-variable-themes
 
-Allows to setup multiple themes for tailwind, based on css variables
+TailwindCSS plugin for setting up multiple themes based on css variables
 
 ## Installation
 
