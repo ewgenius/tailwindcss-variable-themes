@@ -8,7 +8,7 @@ import { ConfigPreview } from "@/components/ConfigPreview";
 export const revalidate = 60 * 60 * 24;
 
 const DemoCard = ({ label }: { label: string }) => (
-  <div className="relative bg-primary-subtle-bg text-primary-foreground-primary p-16 rounded-lg flex justify-center items-center gap-4 shadow-md">
+  <div className="relative border border-primary-border-subtle bg-primary-subtle-bg text-primary-foreground-primary px-8 pt-12 pb-8 rounded-lg flex flex-col justify-center items-stretch gap-4 shadow">
     <span className="absolute top-2 left-2 text-xs font-mono">{label}</span>
 
     <button className="bg-primary-ui border border-primary-border px-3 py-2 rounded-lg hover:shadow hover:bg-primary-ui-hover hover:border-primary-border-hover active:bg-primary-ui-active transition-all duration-300 text-primary-foreground-secondary hover:text-primary-foreground-primary">
@@ -28,30 +28,68 @@ export default async function CustomExample() {
 
   return (
     <ExampleLayout
-      className="bg-primary-1 text-primary-12"
+      className="bg-primary-app-bg text-primary-foreground-primary"
       subtitle="radix colors example"
     >
       <div className="flex flex-wrap gap-1 pb-2">
         <ThemeButton
           theme="gray-light"
-          bg="bg-primary-1"
-          className="border-primary-7 hover:border-primary-8 bg-primary-3 hover:bg-primary-4 active:bg-primary-5"
+          bg="bg-primary-app-bg"
+          className="border-primary-border hover:border-primary-border-hover bg-primary-ui hover:bg-primary-ui-hover active:bg-primary-ui-active"
         />
         <ThemeButton
           theme="gray-dark"
-          bg="bg-primary-1"
-          className="border-primary-7 hover:border-primary-8 bg-primary-3 hover:bg-primary-4 active:bg-primary-5"
+          bg="bg-primary-app-bg"
+          className="border-primary-border hover:border-primary-border-hover bg-primary-ui hover:bg-primary-ui-hover active:bg-primary-ui-active"
+        />
+        <ThemeButton
+          theme="amber-light"
+          bg="bg-primary-app-bg"
+          className="border-primary-border hover:border-primary-border-hover bg-primary-ui hover:bg-primary-ui-hover active:bg-primary-ui-active"
+        />
+        <ThemeButton
+          theme="amber-dark"
+          bg="bg-primary-app-bg"
+          className="border-primary-border hover:border-primary-border-hover bg-primary-ui hover:bg-primary-ui-hover active:bg-primary-ui-active"
+        />
+        <ThemeButton
+          theme="green-light"
+          bg="bg-primary-app-bg"
+          className="border-primary-border hover:border-primary-border-hover bg-primary-ui hover:bg-primary-ui-hover active:bg-primary-ui-active"
+        />
+        <ThemeButton
+          theme="green-dark"
+          bg="bg-primary-app-bg"
+          className="border-primary-border hover:border-primary-border-hover bg-primary-ui hover:bg-primary-ui-hover active:bg-primary-ui-active"
         />
       </div>
 
-      <div className="flex flex-col gap-4 justify-center items-stretch py-8">
-        <DemoCard label="global theme" />
+      <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-4 justify-stretch items-stretch py-8">
+        <div className="sm:col-span-2 md:col-span-3">
+          <DemoCard label="global theme" />
+        </div>
 
         <div className="theme-gray-dark">
           <DemoCard label="local theme-gray-dark" />
         </div>
 
         <div className="theme-gray-light">
+          <DemoCard label="local theme-gray-light" />
+        </div>
+
+        <div className="theme-amber-light">
+          <DemoCard label="local theme-gray-light" />
+        </div>
+
+        <div className="theme-amber-dark">
+          <DemoCard label="local theme-gray-light" />
+        </div>
+
+        <div className="theme-green-light">
+          <DemoCard label="local theme-gray-light" />
+        </div>
+
+        <div className="theme-green-dark">
           <DemoCard label="local theme-gray-light" />
         </div>
       </div>

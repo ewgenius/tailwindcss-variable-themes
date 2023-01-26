@@ -47,6 +47,26 @@ module.exports = {
           primary: radixColors.grayDark,
           accent: radixColors.redDark,
         },
+
+        "amber-light": {
+          primary: radixColors.amber,
+          accent: radixColors.red,
+        },
+
+        "amber-dark": {
+          primary: radixColors.amberDark,
+          accent: radixColors.redDark,
+        },
+
+        "green-light": {
+          primary: radixColors.green,
+          accent: radixColors.yellow,
+        },
+
+        "green-dark": {
+          primary: radixColors.greenDark,
+          accent: radixColors.yellowDark,
+        },
       },
     }),
   ],
