@@ -9,24 +9,26 @@ export const ExampleLayout: FC<
   }>
 > = ({ title, subtitle, children, className }) => {
   return (
-    <main className={`min-h-screen ${className}`}>
+    <main
+      className={`min-h-screen ${className} transition-colors duration-300`}
+    >
       <div className="container mx-auto p-4 max-w-3xl flex flex-col gap-2">
         <nav className="text-sm pb-8 flex gap-4 items-center">
           <Link
             href="/custom"
-            className="underline opacity-50 hover:no-underline hover:opacity-100"
+            className="underline opacity-50 hover:no-underline hover:opacity-100 transition-opacity underline-offset-2 duration-300"
           >
             custom
           </Link>
           <Link
             href="/radix-colors"
-            className="underline opacity-50 hover:no-underline hover:opacity-100"
+            className="underline opacity-50 hover:no-underline hover:opacity-100 transition-opacity underline-offset-2 duration-300"
           >
             radix colors
           </Link>
           <Link
             href="/tailwind-colors"
-            className="underline opacity-50 hover:no-underline hover:opacity-100"
+            className="underline opacity-50 hover:no-underline hover:opacity-100 transition-opacity underline-offset-2 duration-300"
           >
             tailwind colors
           </Link>

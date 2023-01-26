@@ -19,10 +19,12 @@ export default async function CustomExample() {
       <div className="flex flex-wrap gap-1 pb-2">
         <ThemeButton
           theme="light"
+          bg="bg-geist-background"
           className="border-geist-accents-2 hover:border-geist-accents-3 bg-geist-accents-1 hover:bg-geist-accents-2 active:bg-geist-accents-3"
         />
         <ThemeButton
           theme="dark"
+          bg="bg-geist-background"
           className="border-geist-accents-2 hover:border-geist-accents-3 bg-geist-accents-1 hover:bg-geist-accents-2 active:bg-geist-accents-3"
         />
       </div>
