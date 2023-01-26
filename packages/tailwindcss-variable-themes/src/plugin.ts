@@ -2,7 +2,7 @@ import plugin from "tailwindcss/plugin";
 import type { CSSRuleObject } from "tailwindcss/types/config";
 import type { VarNameMapper, ThemeDeclaration } from "./types";
 
-export const defaultMapper = (key: string, i?: number) => key;
+export const defaultMapper: VarNameMapper = (key: string) => key;
 
 export const defaultUtilityPrefix = "theme";
 
