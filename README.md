@@ -15,7 +15,7 @@ https://tailwindcss-variable-themes.ewgenius.me/tailwind-colors ([code](apps/exa
 Install the plugin from npm:
 
 ```sh
-npm install -D tailwind-variable-theme
+npm install -D tailwindcss-variable-themes
 ```
 
 Then add the plugin to your tailwind.config.js file:
