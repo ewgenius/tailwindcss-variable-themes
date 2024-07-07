@@ -1,6 +1,6 @@
 {
   "name": "tailwindcss-variable-themes",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "TailwindCSS plugin for setting up multiple themes based on css variables",
   "keywords": [
     "tailwind",
